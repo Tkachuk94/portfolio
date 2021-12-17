@@ -1,0 +1,59 @@
+/* Color Pallet */
+:root {
+  --custom-blue: #475c6c;
+  --custom-gray: #8a8583;
+  --custom-yellow: #eed7a1;
+  --custom-cream: #f7efd2;
+  --custom-orange: #cd8b62;
+}
+
+* {
+  background-color: var(--custom-yellow);
+}
+
+p {
+  text-align: center;
+}
+
+/* Navbar base */
+.nav {
+  background-color: var(--custom-blue);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float: left;
+  color: var(--custom-cream);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: var(--custom-gray);
+}
+
+/* Changes background/text color on hover over */
+.nav a:hover {
+  background-color: var(--custom-blue);
+  color: var(--custom-orange);
+}
+
+/* change color for current active page*/
+.nav a.active {
+  background-color: var(--custom-orange);
+  color: var(--custom-blue);
+  font-size: larger;
+}
+
+/* pushes contact to far right */
+.contact {
+  float: right;
+}
+
+/* Personal Image */
+.Self {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
