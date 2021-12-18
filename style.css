@@ -137,6 +137,7 @@
   height: 240px;
   margin: 10px;
   opacity: 0.5;
+  border: 10px var(--white) solid;
 }
 
 .websites .bigger {
