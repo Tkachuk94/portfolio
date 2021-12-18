@@ -1,59 +1,255 @@
-/* Color Pallet */
-:root {
-  --custom-blue: #475c6c;
-  --custom-gray: #8a8583;
-  --custom-yellow: #eed7a1;
-  --custom-cream: #f7efd2;
-  --custom-orange: #cd8b62;
-}
-
 * {
-  background-color: var(--custom-yellow);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p {
-  text-align: center;
+:root {
+  --white: #e4dbdb;
+  --black: #2b2b2b;
+  --gray: #272727;
 }
 
-/* Navbar base */
+/* Nav */
 .nav {
-  background-color: var(--custom-blue);
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  position: sticky;
+  top: 0;
 }
 
-/* Style the links inside the navigation bar */
-.nav a {
-  float: left;
-  color: var(--custom-cream);
-  text-align: center;
-  padding: 14px 16px;
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 35px 0px;
+}
+
+.nav ul li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.nav ul li a {
   text-decoration: none;
-  font-size: 17px;
-  background-color: var(--custom-gray);
+  color: var(--white);
+  padding: 8px 25px;
+  transition: all 0.5s ease;
 }
 
-/* Changes background/text color on hover over */
-.nav a:hover {
-  background-color: var(--custom-blue);
-  color: var(--custom-orange);
+.nav ul li a:hover {
+  background-color: var(--white);
+  color: black;
+  box-shadow: 0 0 10px var(--white);
 }
 
-/* change color for current active page*/
-.nav a.active {
-  background-color: var(--custom-orange);
-  color: var(--custom-blue);
-  font-size: larger;
+/* home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0 0 0 0.5);
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
 }
 
-/* pushes contact to far right */
-.contact {
-  float: right;
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(/images/Test.jpg) no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
 }
 
-/* Personal Image */
-.Self {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.headers {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+/* About me Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#pic {
+  display: flex;
+}
+#pic img {
+  width: 575px;
+  height: 400px;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.story {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+
+/* portfolio section */
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: var(--white);
+  align-items: center;
+  padding: 20px;
+}
+
+.websites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.websites img {
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+}
+
+.websites .bigger {
+  width: 480px;
+  height: 320px;
+}
+/* Contact section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 20px;
+  align-items: center;
+}
+
+#contact ul {
+  display: flex;
+  list-style: none;
+  margin: 35px 0px;
+}
+
+#contact ul li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#contact ul li a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+#contact ul li a:hover {
+  background-color: var(--white);
+  color: black;
+  box-shadow: 0 0 10px var(--white);
+}
+
+/* Screen Size changes */
+/* Medium */
+@media screen and (max-width: 992px) {
+  /* Nav */
+  .nav ul {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Headers */
+  .headers {
+    font-size: 2.5rem;
+  }
+
+  /* About */
+  #pic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pic img {
+    width: 475px;
+    height: 300px;
+  }
+
+  #intro h2 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  #contact ul {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/* Small */
+@media screen and (max-width: 768px) {
+  /* Home */
+  #home {
+    height: 820px;
+  }
+
+  .headers {
+    font-size: 1.7rem;
+  }
+
+  /* About */
+  #pic img {
+    width: 300px;
+    height: 175px;
+  }
+
+  #intro h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Portfolio */
+  .websites img {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .websites .bigger {
+    width: 300px;
+    height: 200px;
+  }
+
+  /* Contacts */
+  #contact ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -20,4 +20,24 @@ Added Comments Over Nav CSS
 
 Added Text and background color to main page
 
-Added Image/Centered
+Added Image/Centered.
+
+Changed Color pallet for simplar Layout.
+
+Re-did HTML and CSS over.
+
+Added Home section with Image.
+
+Added About Me section with image and explanation of who I am
+
+Added Portolio Section with hyperlinked image to current website
+
+Added Contact me Section with links to Social Media
+
+Re-added comments
+
+Changed Semantics for easier to read coding.
+
+Gave screen Size changes to adapt website to resolutions
+
+Reorganized CSS by section

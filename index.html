@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Trent Tkachuk Portfolio</title>
-    <link rel="icon" href="Images/portfolio.png" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-       <div class="nav">
-            <a class="active" href="#home">Home</a>
-            <a href="">Work</a>
-            <a href="">About</a>
-            <div class="contact">
-                <a href="">Contact</a>
-            </div>
+<!--NavBar Start-->
+    <nav class="nav">
+        <ul>
+            <li><a href=#home>Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+<!--NavBar End-->
+
+<!--Home Start-->
+    <section id="home">
+        <div class="main">
+            <h1 class="headers">
+             I am <br> Trent Tkachuk!
+            </h1>
         </div>
-    </header>
+    </section>
+<!--Home End-->
 
-<main>
-    <p>Hi, My name is Trent Tkachuk.</p>
-    <img class="Self" src="Images/Self.jpg" alt="Image of Trent Tkachuk">
-    <p>I'm a Web Developer from San Diego,CA</p>
-</main>
-<footer>
-    
+<!--About Me Start-->
+    <section id="about">
+        <h1 class="headers">ABOUT ME</h1>
+            <div id="pic">
+                <img src="images/Self.jpg" alt="Image of Trent Tkachuk">
+                <div id="intro">
+                    <h2>Trent Tkachuk</h2>
+                    <p class="story">
+                        Hello! I am currently a Web Design Student attending a UCSD Extension Boot Camp. While, continuing to
+                        working full time as a Water Utility Supervisor for the City of San Diego. I have always had a passion 
+                        for technology and have decided to take the steps into changing careers into something that 
+                        is my passion as to have a much more enjoyable life. 
+                        While within the Boot Camp we are learning HTML5, CSS3 and Javascript. While believing
+                        this can and will get me into finalizing my career change, I do plan on continue to learn further languages and 
+                        adapt my specilization.                  
+                    </p>
+                </div>
+            </div>
+    </section>
+<!--About me End-->
 
-</footer>
-</html
+<!--Portfolio Start-->
+    <section id="portfolio">
+        <h1 class="headers">PORTFOLIO</h1>
+        <div class="websites">
+            <a href="https://tkachuk94.github.io/Horiseon/">
+                <img class="bigger" src="/images/Horiseon.jpg" alt="Image and link to Horiseon Website">
+            </a>
+            <img src="images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="Unfilled Portfolio Slot">
+            <img src="/images/michael-dziedzic-0W4XLGITrHg-unsplash.jpg" alt="Unfilled Portfolio Slot">
+            <img src="/images/michael-dziedzic-0W4XLGITrHg-unsplash.jpg" alt="Unfilled Portfolio Slot">
+            <img src="/images/michael-dziedzic-0W4XLGITrHg-unsplash.jpg" alt="Unfilled Portfolio Slot">
+            <img src="/images/michael-dziedzic-0W4XLGITrHg-unsplash.jpg" alt="Unfilled Portfolio Slot">
+ 
+
+        </div>
+    </section>
+<!--Portfolio End-->
+
+<!--Contact Me Start-->
+    <section id="contact">
+        <h1 class="headers">CONTACT</h1>
+        <ul>
+            <li>|| Linkedin:<a href="https://www.linkedin.com/in/trent-tkachuk-009b70148/">Trent Tkachuk ||</a>
+            <li>|| Email:<a href="mailto:Tkachuk753@gmail.com">Tkachuk753@gmail.com ||</a>
+            <li>|| GitHub:<a href="https://github.com/Tkachuk94">Tkachuk94 ||</a></li>
+    </section>
+<!--Contact Me End-->
+
+</body>
+</html>
