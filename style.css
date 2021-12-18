@@ -224,6 +224,11 @@
     flex-wrap: wrap;
     align-items: center;
   }
+
+  .pic img {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 /* Small */
@@ -243,7 +248,7 @@
   /* About */
   #pic img {
     width: 300px;
-    height: 250px;
+    height: 300px;
   }
 
   #intro h2 {
