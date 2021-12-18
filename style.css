@@ -61,7 +61,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: url(/Images/Test.jpg) no-repeat center center/cover;
+  background: url(Images/Test.jpg) no-repeat center center/cover;
   height: 900px;
   width: 100%;
   z-index: -1;
@@ -187,6 +187,10 @@
     align-items: center;
   }
 
+  .nav ul li {
+    font-size: 1.1rem;
+  }
+
   /* Headers */
   .headers {
     font-size: 2.5rem;
@@ -216,6 +220,9 @@
 
 /* Small */
 @media screen and (max-width: 768px) {
+  .nav ul li {
+    font-size: 0.8rem;
+  }
   /* Home */
   #home {
     height: 820px;
