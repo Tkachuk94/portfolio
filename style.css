@@ -146,6 +146,8 @@
 
 .websites img:hover {
   opacity: 1;
+  width: 600px;
+  height: 500px;
 }
 /* Contact section */
 #contact {
