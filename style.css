@@ -136,11 +136,16 @@
   width: 360px;
   height: 240px;
   margin: 10px;
+  opacity: 0.5;
 }
 
 .websites .bigger {
   width: 480px;
   height: 320px;
+}
+
+.websites img:hover {
+  opacity: 1;
 }
 /* Contact section */
 #contact {
