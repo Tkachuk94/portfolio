@@ -42,6 +42,8 @@ Gave screen Size changes to adapt website to resolutions
 
 Reorganized CSS by section
 
+updated Secondary website Image/Link
+
 ![Image of website](https://github.com/Tkachuk94/portfolio/blob/main/Images/Portfolio.jpg)
 
 https://tkachuk94.github.io/portfolio/
