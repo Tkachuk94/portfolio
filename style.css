@@ -181,6 +181,10 @@
   box-shadow: 0 0 10px var(--white);
 }
 
+.contactMe {
+  margin-top: 10px;
+}
+
 /* Screen Size changes */
 /* Medium */
 @media screen and (max-width: 992px) {
@@ -261,5 +265,13 @@
   #contact ul {
     flex-direction: column;
     align-items: center;
+    margin: 25px;
   }
+
+  #contact ul li{
+    margin: 20px;
+  }
+
 }
+
+
