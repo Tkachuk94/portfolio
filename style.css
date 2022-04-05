@@ -96,8 +96,8 @@
   display: flex;
 }
 #pic img {
-  width: 575px;
-  height: 400px;
+  width: 40%;
+  height: 40%;
 }
 #intro {
   display: flex;
@@ -133,16 +133,11 @@
 }
 
 .websites img {
-  width: 360px;
-  height: 240px;
+  width: 20rem;
+  height: 20rem;
   margin: 10px;
   opacity: 0.5;
   border: 10px var(--white) solid;
-}
-
-.websites .bigger {
-  width: 480px;
-  height: 320px;
 }
 
 .websites img:hover {
@@ -186,6 +181,10 @@
   box-shadow: 0 0 10px var(--white);
 }
 
+.contactMe {
+  margin-top: 10px;
+}
+
 /* Screen Size changes */
 /* Medium */
 @media screen and (max-width: 992px) {
@@ -211,8 +210,8 @@
   }
 
   #pic img {
-    width: 475px;
-    height: 300px;
+    width: 30rem;
+    height: 30rem;
   }
 
   #intro h2 {
@@ -247,8 +246,8 @@
 
   /* About */
   #pic img {
-    width: 300px;
-    height: 300px;
+    width: 30rem;
+    height: 30rem;
   }
 
   #intro h2 {
@@ -257,20 +256,20 @@
 
   /* Portfolio */
   .websites img {
-    width: 250px;
-    height: 150px;
+    width: 25rem;
+    height: 25rem;
     margin: 10px;
-  }
-
-  .websites .bigger {
-    width: 300px;
-    height: 200px;
   }
 
   /* Contacts */
   #contact ul {
     flex-direction: column;
     align-items: center;
+    margin: 25px;
+  }
+
+  #contact ul li{
+    margin: 20px;
   }
   .websites img:hover {
     opacity: 1;
@@ -278,3 +277,5 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
+
+
