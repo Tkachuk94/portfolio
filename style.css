@@ -147,8 +147,8 @@
 
 .websites img:hover {
   opacity: 1;
-  width: 600px;
-  height: 500px;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Contact section */
 #contact {
@@ -271,5 +271,10 @@
   #contact ul {
     flex-direction: column;
     align-items: center;
+  }
+  .websites img:hover {
+    opacity: 1;
+    transform: scale(1.0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
